@@ -1,6 +1,6 @@
 import Banner from "../components/Banner"
 import Footer from "../components/Footer"
-import imgPaysage from "../assets/infoPaysage.jpg"
+import imgPaysage from "../assets/bandeauDetail.jpg"
 import "../styles/Detail.css"
 export default function Survey() {
     return (
@@ -10,7 +10,7 @@ export default function Survey() {
       </div>
       <main>
         <div className="infos">
-          <img src={imgPaysage} alt="Baniere paysage" className="imgPaysage" ></img>
+          <img src={imgPaysage} alt="Baniere paysage" className="bandeauDetail" ></img>
         </div>
       </main>
       <footer>
