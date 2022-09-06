@@ -4,9 +4,10 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import './styles/index.css';
 import App from "./pages/Accueil";
 import Detail from "./pages/Detail";
-import Error from "./components/Error"
+import Error from "./pages/Error"
 
 const rootElement = document.getElementById("root");
 render(

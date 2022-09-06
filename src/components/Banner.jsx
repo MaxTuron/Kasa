@@ -1,17 +1,14 @@
 import { Link } from "react-router-dom";
 
+import '../styles/banner.css';
+
 export default function Banner() {
     return (
-      <div>
-        <h1>Kasa</h1>
-        <nav
-          style={{
-            borderBottom: "solid 1px",
-            paddingBottom: "1rem",
-          }}
-        >
-          <Link to="/">Accueil</Link> |{" "}
-          <Link to="/detail">A propos</Link>
+      <div className="banner">
+        <h1 className="title">Kasa</h1>
+        <nav className="nav">
+          <Link className="navRedirect" to="/">Accueil</Link>
+          <Link className="navRedirect" to="/detail">A propos</Link>
         </nav>
       </div>
     );
