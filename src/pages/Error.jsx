@@ -9,9 +9,9 @@ export default function Error() {
                 <Banner />
             </header>
             <main className="errorPage">
-                <div className="errorText">
-                    <p>404</p>
-                    <p>Oups! La page que vous demandez n'existe pas.</p>
+                <div>
+                    <p className="code404">404</p>
+                    <p className="errorText">Oups! La page que vous demandez n'existe pas.</p>
                 </div>
                 <div>
                     <Link className="indexRedirect" to="/">Retourner sur la page d'accueil</Link>
