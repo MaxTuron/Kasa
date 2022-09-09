@@ -1,4 +1,4 @@
-import '../styles/Footer.css';
+import '../styles/footer.css';
 import Logo from '../assets/logoBlack.png'
 
 export default function Banner() {

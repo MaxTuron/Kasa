@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Banner from "../components/Banner"
 import Footer from "../components/Footer"
-import "../styles/Error.css"
+import "../styles/error.css"
 export default function Error() {
     return (
         <body>

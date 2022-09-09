@@ -2,7 +2,7 @@ import Banner from "../components/Banner"
 import Footer from "../components/Footer"
 import Info from "../components/Info"
 import imgPaysage from "../assets/bandeauDetail.jpg"
-import "../styles/Detail.css"
+import "../styles/detail.css"
 export default function Survey() {
     return (
     <body>
@@ -19,5 +19,5 @@ export default function Survey() {
         <Footer />
       </footer>
     </body>
-    );
-  }
+  );
+}

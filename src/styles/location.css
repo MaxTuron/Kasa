@@ -1,0 +1,17 @@
+.displayLogement {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logement {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    color: white;
+    background-color: #FF6060;
+    border: black 3px solid;
+    border-radius: 2px;
+  }
