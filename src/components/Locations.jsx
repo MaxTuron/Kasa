@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
 import Logements from "../data/logements.json"
 import "../styles/location.css"
+
 export default function Locations() {
    
     return ( 
-        <main>
+        <div>
             <h1>Les Logements</h1>
             <div className="displayLogement">
                 {Logements.map((logement,key) => {
@@ -17,6 +18,6 @@ export default function Locations() {
                     )
                 })}
             </div>
-        </main>
+        </div>
     )
 }

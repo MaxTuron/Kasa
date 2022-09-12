@@ -5,7 +5,7 @@ import imgPaysage from "../assets/bandeauDetail.jpg"
 import "../styles/detail.css"
 export default function Survey() {
     return (
-    <body>
+    <div>
       <div>
         <Banner />
       </div>
@@ -18,6 +18,6 @@ export default function Survey() {
       <footer>
         <Footer />
       </footer>
-    </body>
+    </div>
   );
 }

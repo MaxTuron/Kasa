@@ -4,7 +4,7 @@ import Footer from "../components/Footer"
 import "../styles/error.css"
 export default function Error() {
     return (
-        <body>
+        <div>
             <header>
                 <Banner />
             </header>
@@ -20,6 +20,6 @@ export default function Error() {
             <footer>
                 <Footer />
             </footer>
-        </body>
+        </div>
     )
 }
