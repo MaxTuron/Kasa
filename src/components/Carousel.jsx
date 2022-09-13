@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import {useParams} from 'react-router-dom';
 import Logements from "../data/logements.json"
-import {FaArrowAltCircleRight, FaArrowCircleLeft} from "react-icons/fa"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import "../styles/carousel.css"
 
 export default function Carousel () {
@@ -26,8 +27,8 @@ export default function Carousel () {
 
 return(
     <section className="slider">
-        <FaArrowCircleLeft className="left-arrow" onClick={prevSlide}/>
-        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide}/>
+        <FontAwesomeIcon icon={faArrowCircleLeft} className="left-arrow" onClick={prevSlide}/>
+        <FontAwesomeIcon icon={faArrowAltCircleRight} className="right-arrow"  onClick={nextSlide}/>
         {pictures.map((picture,index) => {
                     return(
                         <div className={index === current ? 'slide active' : 'slide'} key={index}>
