@@ -3,7 +3,7 @@ import Logements from "../data/logements.json"
 import Banner from "../components/Banner"
 import Footer from "../components/Footer"
 import Carousel from "../components/Carousel"
-
+import "../styles/logement.css"
 export default function Logement ()  {
     const { logementId } = useParams();
     const logementUnique = Logements.find((logementUnique) => logementUnique.id === logementId)
@@ -20,28 +20,31 @@ export default function Logement ()  {
         <Carousel />
 
 
-        <h1>{title}</h1>
+        <h1 className='title'>{title}</h1>
+        <h2 className='title'>{location}</h2>
+
+        <div className='tags' >
+        {tags.map((tag,index) => {
+            return(
+                <p className='tag' key={index}>{tag}</p>
+            )
+        })}
+</div>
         <p>{description}</p>
         <p>{host.name}</p>
         <img src={host.picture} alt="photoProfil"></img>
         <p>{rating}</p>
-        <p>{location}</p>
+        
 
-        {equipments.map((equipement,key) => {
+        {equipments.map((equipement,index) => {
             return(
-              <div>
-                <p key={key}>{equipement}</p>
+              <div key={index}>
+                <p>{equipement}</p>
               </div>
             )
         })}
 
-        {tags.map((tag,key) => {
-            return(
-              <div>
-                <p key={key}>{tag}</p>
-              </div>
-            )
-        })}
+       
 
 
         <Link to='/'>Retour sur la page d'accueil</Link>

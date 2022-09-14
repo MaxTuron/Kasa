@@ -33,6 +33,7 @@ return(
                     return(
                         <div className={index === current ? 'slide active' : 'slide'} key={index}>
                             {index === current && (<img src={picture} alt="ImageLocation" className="image"></img>)}
+                            {index === current && (<p>{index+1}/{length}</p>)}
                         </div>
                     )
                 })}
