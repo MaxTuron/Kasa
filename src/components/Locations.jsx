@@ -12,7 +12,7 @@ export default function Locations() {
                     return(
                         <div>
                             <h5 key={key} className="logement">{logement.title}</h5>
-                            <p >{logement.description}</p>
+                            <img src={logement.cover} alt="ImagePrésentation"></img>
                             <Link to={`logement/${logement.id}`}>Plus d'info</Link>
                         </div>
                     )
