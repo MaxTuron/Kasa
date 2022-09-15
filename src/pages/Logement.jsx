@@ -11,9 +11,14 @@ import "../styles/logement.css"
 export default function Logement ()  {
     const { logementId } = useParams();
     const logementUnique = Logements.find((logementUnique) => logementUnique.id === logementId)
-    const {id, title, description, host, rating, location, equipments, tags} = logementUnique
-    const etoiles = [1, 2, 3, 4, 5]
+  
 
+    if(!logementUnique){
+      return <Error />
+    }
+    
+    const {title, description, host, rating, location, equipments, tags} = logementUnique
+    const etoiles = [1, 2, 3, 4, 5]
     return (
     <div>
       <div>
