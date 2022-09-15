@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {useParams} from 'react-router-dom';
 import Logements from "../data/logements.json"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
+import arrowLeft from "../assets/arrow-left-solid.svg"
+import arrowRight from "../assets/arrow-right-solid.svg"
 import "../styles/carousel.css"
 
 export default function Carousel () {
@@ -27,13 +27,13 @@ export default function Carousel () {
 
 return(
     <section className="slider">
-        <FontAwesomeIcon icon={faArrowCircleLeft} className="left-arrow" onClick={prevSlide}/>
-        <FontAwesomeIcon icon={faArrowAltCircleRight} className="right-arrow"  onClick={nextSlide}/>
-        {pictures.map((picture,index) => {
+        <img src={arrowLeft} alt="ArrowLeft" className="left-arrow" onClick={prevSlide}/>
+        <img src={arrowRight} alt="ArrowRight" className="right-arrow"  onClick={nextSlide}/>
+        {pictures.map((picture,key) => {
                     return(
-                        <div className={index === current ? 'slide active' : 'slide'} key={index}>
-                            {index === current && (<img src={picture} alt="ImageLocation" className="image"></img>)}
-                            {index === current && (<p>{index+1}/{length}</p>)}
+                        <div className={key === current ? 'slide active' : 'slide'} key={key}>
+                            {key === current && (<img src={picture} alt="ImageLocation" className="image"></img>)}
+                            {key === current && (<p>{key+1}/{length}</p>)}
                         </div>
                     )
                 })}

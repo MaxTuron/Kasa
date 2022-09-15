@@ -1,12 +1,53 @@
-.title{
+.premiereLigne{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.deuxiemeLigne{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+
+.premiereLigne img{
+    width: 30%;
+    border-radius: 65px;
+}
+
+.infoProprio{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.title, .name{
+    color: #FF6060;
+}
+
+.location{
     color: #FF6060;
     margin-left: 6%;
 }
 
+
 .tags{
     display: flex;
     flex-direction: row;
-    margin-left: 6%;
 }
 
 .tag{
@@ -18,4 +59,44 @@
     border-radius: 10px;
     margin-right: 5px;
     padding: 5px;
+}
+
+.troisiemeLigne{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+    padding: 5px;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.descriptionMenu, .equipmentMenu{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: #FF6060;
+    margin: 0 5px 0 0; 
+    width: 50%;
+}
+
+.descriptionTitle, .equipmentTitle{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    background-color: #FF6060;
+    border: #FF6060 2px solid;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.equipment, .description {
+    background-color: gray;
+    margin: 0;
+}
+
+.stars {
+    display: flex;
+}
+
+.star {
+    width: 40px;
 }

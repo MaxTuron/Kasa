@@ -1,4 +1,4 @@
-import { render } from "react-dom";
+import ReactDOM from 'react-dom/client';
 import {
   BrowserRouter,
   Routes,
@@ -10,8 +10,8 @@ import Detail from "./pages/Detail";
 import Error from "./pages/Error"
 import Logement from "./pages/Logement"
 
-const rootElement = document.getElementById("root");
-render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
@@ -20,5 +20,4 @@ render(
       <Route path="*" element={<Error />}/>
     </Routes>
   </BrowserRouter>,
-  rootElement
 );
