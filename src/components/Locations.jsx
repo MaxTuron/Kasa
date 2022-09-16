@@ -10,8 +10,8 @@ export default function Locations() {
             <div className="displayLogement">
                 {Logements.map((logement,key) => {
                     return(
-                        <div>
-                            <h5 key={key} className="logement">{logement.title}</h5>
+                        <div key={key}>
+                            <h5 className="logement">{logement.title}</h5>
                             <img src={logement.cover} alt="ImagePrésentation"></img>
                             <Link to={`logement/${logement.id}`}>Plus d'info</Link>
                         </div>

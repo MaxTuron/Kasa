@@ -40,15 +40,15 @@ export default function Logement ()  {
 
         <div className='deuxiemeLigne'>
           <div className='tags' >
-            {tags.map((tag,index) => {
+            {tags.map((tag,key) => {
                 return(
-                    <p className='tag' key={index}>{tag}</p>
+                    <p className='tag' key={key}>{tag}</p>
                 )
             })}
           </div>
           <div className='stars'>
-          {etoiles.map((nbEtoiles) =>
-                rating >= nbEtoiles ? <img src={star} alt='Etoile' className='star'/> : <img src={emptyStar} className='star' alt='EtoileVide' />
+          {etoiles.map((nbEtoiles, key) =>
+                rating >= nbEtoiles ? <img src={star} key={key} alt='Etoile' className='star'/> : <img src={emptyStar} key={key} className='star' alt='EtoileVide' />
             )}
           </div>
         </div>
@@ -60,12 +60,12 @@ export default function Logement ()  {
 
           <Dropdown key="equipement" title="Équipements">
             <ul>
-              {equipments.map(equipment => (
-                <li key={equipment}>{equipment}</li>
+              {equipments.map((equipment, key) => (
+                <li key={key}>{equipment}</li>
               ))}
             </ul>
           </Dropdown>
-          
+
         </div>
         <Link to='/'>Retour sur la page d'accueil</Link>
       </section>
