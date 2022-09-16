@@ -4,6 +4,7 @@ import Error from "../pages/Error"
 import Banner from "../components/Banner"
 import Footer from "../components/Footer"
 import Carousel from "../components/Carousel"
+import Dropdown from "../components/Dropdown"
 import star from "../assets/star-solid.svg"
 import emptyStar from "../assets/star-regular.svg"
 import "../styles/logement.css"
@@ -12,11 +13,11 @@ export default function Logement ()  {
     const { logementId } = useParams();
     const logementUnique = Logements.find((logementUnique) => logementUnique.id === logementId)
   
-
+    //Gestion du 404 dans les logements
     if(!logementUnique){
       return <Error />
     }
-    
+
     const {title, description, host, rating, location, equipments, tags} = logementUnique
     const etoiles = [1, 2, 3, 4, 5]
     return (
@@ -52,26 +53,20 @@ export default function Logement ()  {
           </div>
         </div>
         
-        <div className='troisiemeLigne'>
-          <div className='descriptionMenu'>
-            <h1 className='descriptionTitle'>Description</h1>
-            <p className='description'>{description}</p>
-          </div>
+        <div>
+          <Dropdown key="description" title="Description">
+            {description}
+          </Dropdown>
 
-          <div className='equipmentMenu'>
-            <h1 className='equipmentTitle'>Equipements</h1>
-            <div className='equipment'>
-              {equipments.map((equipement,index) => {
-                  return(
-                    <div key={index}>
-                      <p>{equipement}</p>
-                    </div>
-                  )
-              })}
-            </div>
-          </div>
+          <Dropdown key="equipement" title="Équipements">
+            <ul>
+              {equipments.map(equipment => (
+                <li key={equipment}>{equipment}</li>
+              ))}
+            </ul>
+          </Dropdown>
+          
         </div>
-       
         <Link to='/'>Retour sur la page d'accueil</Link>
       </section>
       <footer>

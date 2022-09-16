@@ -1,23 +1,50 @@
+import "../styles/detail.css";
 import Banner from "../components/Banner"
 import Footer from "../components/Footer"
-import Info from "../components/Info"
-import imgPaysage from "../assets/bandeauDetail.jpg"
-import "../styles/detail.css"
-export default function Survey() {
-    return (
+import Dropdown from "../components/Dropdown";
+
+export default function Detail() {
+  return (
     <div>
+      <Banner />
       <div>
-        <Banner />
-      </div>
-      <main>
-        <div className="infos">
-          <img src={imgPaysage} alt="Baniere paysage" className="bandeauDetail" ></img>
-          <Info />
+        <div></div>
+        <div>
+          <Dropdown title="Fiabilité">
+            <p>
+              Les annonces postées sur Kasa garantissent une fiabilité totale.
+              Les photos sont conformes aux logements, et toutes les
+              informations sont régulièrement vérifiées par nos équipes.
+            </p>
+          </Dropdown>
+          <Dropdown title="Respect">
+            <p>
+              La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
+              comportement discriminatoire ou de perturbation du voisinage
+              entraînera une exclusion de notre plateforme.
+            </p>
+          </Dropdown>
+          <Dropdown title="Service" >
+            <p>
+              Nos équipes se tiennent à votre disposition pour vous fournir une
+              expérience parfaite. N'hésitez pas à nous contacter si vous avez
+              la moindre question.
+            </p>
+          </Dropdown>
+          <Dropdown title="Sécurité" >
+            <p>
+              La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
+              pour les voyageurs, chaque logement correspond aux critères de
+              sécurité établis par nos services. En laissant une note aussi bien
+              à l'hôte qu'au locataire, cela permet à nos équipes de vérifier
+              que les standards sont bien respectés. Nous organisons également
+              des ateliers sur la sécurité domestique pour nos hôtes.
+            </p>
+          </Dropdown>
         </div>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      </div>
+      <Footer />
     </div>
   );
 }
+

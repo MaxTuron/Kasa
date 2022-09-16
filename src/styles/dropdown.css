@@ -1,0 +1,20 @@
+.dropdownTitle{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #ff6060;
+    color: white;
+    cursor: pointer;
+}
+
+
+.dropdownText{
+    position: relative;
+    display: none;
+    background-color: #f6f6f6;
+}
+
+.active {
+    display: block;
+    background-color: #f6f6f6;
+}
