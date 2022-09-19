@@ -53,19 +53,18 @@ export default function Logement ()  {
           </div>
         </div>
         
-        <div>
-          <Dropdown key="description" title="Description">
-            {description}
-          </Dropdown>
+        <div className="dropdownLogement">
+            <Dropdown key="description" title="Description">
+              {description}
+            </Dropdown>
 
-          <Dropdown key="equipement" title="Équipements">
-            <ul>
-              {equipments.map((equipment, key) => (
-                <li key={key}>{equipment}</li>
-              ))}
-            </ul>
-          </Dropdown>
-
+            <Dropdown key="equipement" title="Équipements">
+              <ul>
+                {equipments.map((equipment, key) => (
+                  <li key={key}>{equipment}</li>
+                ))}
+              </ul>
+            </Dropdown>
         </div>
         <Link to='/'>Retour sur la page d'accueil</Link>
       </section>

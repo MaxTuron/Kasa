@@ -31,7 +31,7 @@ return(
         <img src={arrowRight} alt="ArrowRight" className="right-arrow"  onClick={nextSlide}/>
         {pictures.map((picture,key) => {
                     return(
-                        <div className={key === current ? 'slide active' : 'slide'} key={key}>
+                        <div className={key === current ? 'slide activeImage' : 'slide'} key={key}>
                             {key === current && (<img src={picture} alt="ImageLocation" className="image"></img>)}
                             {key === current && (<p>{key+1}/{length}</p>)}
                         </div>

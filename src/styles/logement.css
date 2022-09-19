@@ -100,3 +100,9 @@
 .star {
     width: 40px;
 }
+
+.dropdownLogement {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 6%;
+}

@@ -1,0 +1,17 @@
+.bandeauAccueil{
+    height: 150px;
+    width: 91%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 6% 3% 6%;
+}
+
+
+.texteBandeau {
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+    top: -175px;
+    font-size: xx-large;
+}
