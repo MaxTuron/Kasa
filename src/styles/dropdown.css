@@ -31,13 +31,13 @@
     display: none;
     color: #ff6060;
     font-size: x-large;
-    background-color: grey;
-    border: grey 2px solid;
+    background-color: #F6F6F6;
+    border: #F6F6F6 2px solid;
     border-radius: 0 0 5px 5px;
 }
 
 .active {
     display: block;
-    background-color: grey;
+    background-color: #F6F6F6;
     border-radius: 10px;
 }

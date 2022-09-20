@@ -7,7 +7,6 @@ export default function Dropdown({ title, children }) {
   const [active, setActive] = useState(false);
 
   const { logementId } = useParams();
-  console.log(logementId)
 
   const handleToggle = e => {
     return setActive(!active);

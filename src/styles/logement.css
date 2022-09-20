@@ -6,8 +6,7 @@
     padding: 5px;
     align-items: center;
     justify-content: space-between;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin: 0 6% 0 6%;
 }
 
 .deuxiemeLigne{
@@ -24,7 +23,7 @@
 
 
 .premiereLigne img{
-    width: 30%;
+    width: 20%;
     border-radius: 65px;
 }
 
@@ -37,11 +36,17 @@
 
 .title, .name{
     color: #FF6060;
+    margin: 0;
+}
+
+.name{
+    width: 25%;
+    padding: 0 10px 0 0;
 }
 
 .location{
     color: #FF6060;
-    margin-left: 6%;
+    margin: 0 0 0 6%;
 }
 
 

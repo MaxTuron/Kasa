@@ -6,9 +6,9 @@ import "../styles/accueil.css"
 
 export default function Accueil() {
   return (
-    <div className="Accueil">
+    <div className="Accueil font-link">
         <Banner />
-        <div className="bandeauAccueil">
+        <div className="bandeau">
           <img src={imgBandeau} alt="Bandeau Index" className="bandeauAccueil"></img>
           <p className="texteBandeau">Chez vous, partout et ailleur</p>
         </div>

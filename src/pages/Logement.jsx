@@ -21,7 +21,7 @@ export default function Logement ()  {
     const {title, description, host, rating, location, equipments, tags} = logementUnique
     const etoiles = [1, 2, 3, 4, 5]
     return (
-    <div>
+    <div className='font-link'>
       <div>
         <Banner />
       </div>
@@ -36,7 +36,7 @@ export default function Logement ()  {
           </div>
         </div>
         
-        <h2 className='location'>{location}</h2>
+        <p className='location'>{location}</p>
 
         <div className='deuxiemeLigne'>
           <div className='tags' >

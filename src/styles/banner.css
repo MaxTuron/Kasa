@@ -1,27 +1,39 @@
 .banner{
 display: flex;
 justify-content: space-between;
+margin: 0 6% 0 6%;
 }
 
 .logo{
-  width: 10%;
-  margin:0 0 0 6%;
+  width: 165px;
+  height: 58px;
 }
 
 .nav{
   display: flex;
   justify-content: space-between;
-  width: 10%;
-  margin: 0 6% 0 0;
 }
 
-.navRedirect{
+.navRedirectUnderline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 120%;
+  color: #FF6060;
+  text-decoration: underline;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.navRedirectNone{
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 120%;
   color: #FF6060;
   text-decoration: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .navRedirect:hover{

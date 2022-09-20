@@ -8,7 +8,7 @@ export default function Error() {
             <header>
                 <Banner />
             </header>
-            <main className="errorPage">
+            <main className="errorPage font-link">
                 <div>
                     <p className="code404">404</p>
                     <p className="errorText">Oups! La page que vous demandez n'existe pas.</p>

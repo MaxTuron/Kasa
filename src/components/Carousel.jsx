@@ -33,7 +33,7 @@ return(
                     return(
                         <div className={key === current ? 'slide activeImage' : 'slide'} key={key}>
                             {key === current && (<img src={picture} alt="ImageLocation" className="image"></img>)}
-                            {key === current && (<p>{key+1}/{length}</p>)}
+                            {key === current && (<p className="compteur">{key+1}/{length}</p>)}
                         </div>
                     )
                 })}

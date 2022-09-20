@@ -1,17 +1,16 @@
 .bandeauAccueil{
     height: 150px;
-    width: 91%;
+    width: 88%;
     object-fit: cover;
     border-radius: 10px;
-    margin: 0 6% 3% 6%;
+    margin: 0 0 0 6%;
 }
-
 
 .texteBandeau {
     display: flex;
     justify-content: center;
     color: white;
     position: relative;
-    top: -175px;
+    top: -135px;
     font-size: xx-large;
 }

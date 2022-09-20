@@ -6,7 +6,7 @@ import Dropdown from "../components/Dropdown";
 
 export default function Detail() {
   return (
-    <div>
+    <div className="font-link">
       <Banner />
       <div>
         <img src={bandeauDetail} alt="BandeauDetail" className="bandeauDetail"/>

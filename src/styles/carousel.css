@@ -14,22 +14,26 @@
 
 .right-arrow {
     position: absolute;
-    top: 50%;
+    top: 30%;
     height: 5%;
-    right: 32px;
+    right: 130px;
     font-size: 3rem;
-    color: black;
     cursor: pointer;
-    user-select: none;
 }
 
 .left-arrow {
     position: absolute;
-    top: 50%;
+    top: 30%;
     height: 5%;
-    left: 32px;
+    left: 130px;
     font-size: 3rem;
-    color: black;
     cursor: pointer;
-    user-select: none;
+}
+
+.compteur {
+    display: flex;
+    justify-content: center;
+    color: white;
+    top: -50px;
+    position: relative;
 }

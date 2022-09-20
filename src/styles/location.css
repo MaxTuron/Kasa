@@ -3,10 +3,10 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: gray;
-    border: grey 3px solid;
+    background-color: #F6F6F6;
+    border: #F6F6F6 3px solid;
     border-radius: 15px;
-    margin:0 6% 2% 6%;
+    margin:0 6% 2% 0;
   }
 
   .logement {
@@ -24,18 +24,23 @@
     padding: 10px;
   }
 
+  .cards a{
+    text-decoration: none;
+  }
+
   .cards p{
     display: flex;
     justify-content: center;
     color: white;
-    text-decoration: none;
+    
     width: 100%;
     position: relative;
-    top: -50px;
+    top: -69px;
   }
 
   .cards img{
     border-radius: 15px;
     width:100%;
     object-fit: cover;
+    height: 320px;
   }
