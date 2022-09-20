@@ -66,7 +66,6 @@ export default function Logement ()  {
               </ul>
             </Dropdown>
         </div>
-        <Link to='/'>Retour sur la page d'accueil</Link>
       </section>
       <footer>
         <Footer />
