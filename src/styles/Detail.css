@@ -18,3 +18,26 @@
   justify-content: center;
   margin: 0 6% 0 6%;
 }
+
+@media (max-width: 850px) { 
+  .infos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bandeauDetail {
+      height: 250px;
+      width: 88%;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 0 6% 0 6%;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 6% 0 6%;
+  }
+}

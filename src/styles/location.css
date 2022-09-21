@@ -44,3 +44,18 @@
     object-fit: cover;
     height: 320px;
   }
+
+  @media (max-width: 850px) { 
+    .displayLogement {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      margin:0 6% 2% 0;
+    }
+
+    .cards{
+      width: 90%;
+      padding: 10px;
+    }
+  }

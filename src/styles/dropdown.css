@@ -4,6 +4,8 @@
     justify-content: center;
     margin: 0 0 1% 0;
     border-radius: 5px;
+    width: 90%;
+    align-self: center;
 }
 
 .dropdownItemShort{
@@ -40,4 +42,17 @@
     display: block;
     background-color: #F6F6F6;
     border-radius: 10px;
+}
+
+
+@media (max-width: 850px) { 
+    .dropdownItemLong{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 1% 0;
+        border-radius: 5px;
+        width: 100%;
+        align-self: center;
+    }
 }

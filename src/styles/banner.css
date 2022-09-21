@@ -40,3 +40,11 @@ margin: 0 6% 0 6%;
 .navRedirect:hover{
   text-decoration: underline;
 }
+
+@media (max-width: 850px) { 
+  .logo{
+    margin: 1% 0 1% 0;
+    width: 135px;
+    height: 58px;
+  }
+}

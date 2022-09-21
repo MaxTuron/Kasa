@@ -14,3 +14,14 @@
     top: -135px;
     font-size: xx-large;
 }
+
+@media (max-width: 850px) { 
+    .texteBandeau {
+        display: flex;
+        justify-content: center;
+        color: white;
+        position: relative;
+        top: -100px;
+        font-size: large;
+    }
+  }

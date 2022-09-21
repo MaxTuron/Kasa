@@ -34,3 +34,19 @@
     color: #FF6060;
     text-decoration: underline;
   }
+
+  @media (max-width: 850px) { 
+    .errorText {
+      font-size: 150%;
+      margin: 0 0 5% 1%;
+    }
+  
+    .code404 {
+      font-size: 700%;
+      margin: 0;
+    }
+  
+    .indexRedirect{
+      font-size: 90%;
+    }
+  }

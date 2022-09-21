@@ -5,7 +5,6 @@ import '../styles/banner.css';
 export default function Banner() {
   const URL = window.location.href
   const newUrl = URL.split(3000)
-  console.log(newUrl)
     return (
       <div className="banner">
         <img src={logoRed} alt="Logo rouge Kasa" className="logo"></img>
