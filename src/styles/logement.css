@@ -111,3 +111,46 @@
     flex-wrap: wrap;
     margin: 0 0 0 6%;
 }
+
+@media (max-width: 850px) { 
+    .deuxiemeLigne{
+        display: flex;
+        align-items: baseline !important;
+        flex-direction: column;
+        border-radius: 10px;
+        margin-right: 5px;
+        padding: 5px;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .name{
+        width: 25%;
+        padding: 0 35px 0 0;
+    }
+
+    .premiereLigne img{
+        width: 34%;
+        border-radius: 65px;
+    }
+
+    .star {
+        width: 35px;
+    }
+
+    .stars {
+        margin: 0 0 11px 0;
+    }
+
+    .dropdownLogement {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 0 0 6%;
+    }
+
+    .tag{
+        display: flex;
+        align-self: center;
+    }
+  }

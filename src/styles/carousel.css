@@ -6,26 +6,26 @@
 
 .image {
     display: flex;
-    width: 1678px;
+    width: 85vw;
     height: 500px;
     border-radius: 10px;
     object-fit: cover;
 }
 
 .right-arrow {
-    position: absolute;
-    top: 33%;
-    height: 5%;
-    right: 130px;
+    position: relative;
+    left: auto;
+    width: 10%;
+    height: 10%;
     font-size: 3rem;
     cursor: pointer;
 }
 
 .left-arrow {
-    position: absolute;
-    top: 33%;
-    height: 5%;
-    left: 130px;
+    position: relative;
+    left: auto;
+    width: 10%;
+    height: 10%;
     font-size: 3rem;
     cursor: pointer;
 }
@@ -37,3 +37,80 @@
     top: -50px;
     position: relative;
 }
+
+  @media (min-width: 300px) and (max-width : 400px) { 
+
+    .right-arrow {
+        right: 40px;
+    }
+    
+    .left-arrow {
+        left: 40px;
+    }
+  }
+
+  @media (min-width: 401px) and (max-width:602px) { 
+
+    .right-arrow {
+        right: 60px;
+    }
+    
+    .left-arrow {
+        left: 60px;
+    }
+  }
+
+  @media (min-width: 603px) and (max-width:754px) { 
+
+    .right-arrow {
+        right: 65px;
+    }
+    
+    .left-arrow {
+        left: 65px;
+    }
+  }
+
+  @media (min-width: 755px) and (max-width: 985px) { 
+
+    .right-arrow {
+        right: 83px;
+    }
+    
+    .left-arrow {
+        left: 83px;
+    }
+  }
+
+  @media (min-width: 986px) and (max-width: 1261px) { 
+
+    .right-arrow {
+        right: 100px;
+    }
+    
+    .left-arrow {
+        left: 100px;
+    }
+  }
+
+  @media (min-width: 1262px) and (max-width: 1600px) { 
+
+    .right-arrow {
+        right: 130px;
+    }
+    
+    .left-arrow {
+        left: 130px;
+    }
+  }
+
+  @media (min-width: 1601px) and (max-width: 2200px) { 
+
+    .right-arrow {
+        right: 160px;
+    }
+    
+    .left-arrow {
+        left: 160px;
+    }
+  }

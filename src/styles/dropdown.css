@@ -36,6 +36,7 @@
     background-color: #F6F6F6;
     border: #F6F6F6 2px solid;
     border-radius: 0 0 5px 5px;
+    word-wrap: break-word;
 }
 
 .active {
@@ -54,5 +55,13 @@
         border-radius: 5px;
         width: 100%;
         align-self: center;
+    }
+
+    .dropdownItemShort{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        border-radius: 5px;
+        margin: 0 2% 1% 0; 
     }
 }

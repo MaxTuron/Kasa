@@ -1,4 +1,4 @@
-import {Link, useParams} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import Logements from "../data/logements.json"
 import Error from "../pages/Error"
 import Banner from "../components/Banner"
