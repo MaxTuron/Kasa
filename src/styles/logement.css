@@ -34,6 +34,10 @@
     align-items: center;
 }
 
+.mobileVersion {
+    display: none;
+}
+
 .title, .name{
     color: #FF6060;
     margin: 0;
@@ -111,6 +115,28 @@
     flex-wrap: wrap;
     margin: 0 0 0 6%;
 }
+
+@media (min-width : 300px) and (max-width: 849px) { 
+.deskVersion {
+    display: none;
+}
+
+.mobileVersion {
+    display: flex;
+}
+
+.profilMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.photoProfilMobile {
+    width: 20%;
+    border-radius: 65px;
+}
+  }
 
 @media (max-width: 850px) { 
     .deuxiemeLigne{

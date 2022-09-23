@@ -30,7 +30,7 @@ export default function Logement ()  {
 
         <div className='premiereLigne'>
           <h1 className='title'>{title}</h1>
-          <div className='infoProprio'>
+          <div className='infoProprio deskVersion'>
             <p className='name'>{host.name}</p>
             <img src={host.picture} alt="photoProfil"></img>
           </div>
@@ -46,10 +46,16 @@ export default function Logement ()  {
                 )
             })}
           </div>
-          <div className='stars'>
-          {etoiles.map((nbEtoiles, key) =>
-                rating >= nbEtoiles ? <img src={star} key={key} alt='Etoile' className='star'/> : <img src={emptyStar} key={key} className='star' alt='EtoileVide' />
-            )}
+          <div className="profilMobile">
+            <div className='stars'>
+            {etoiles.map((nbEtoiles, key) =>
+                  rating >= nbEtoiles ? <img src={star} key={key} alt='Etoile' className='star'/> : <img src={emptyStar} key={key} className='star' alt='EtoileVide' />
+              )}
+            </div>
+            <div className='infoProprio mobileVersion'>
+              <p className='name'>{host.name}</p>
+              <img src={host.picture} alt="photoProfil" className="photoProfilMobile"></img>
+            </div>
           </div>
         </div>
         

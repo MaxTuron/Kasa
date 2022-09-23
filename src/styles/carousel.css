@@ -15,8 +15,7 @@
 .right-arrow {
     position: relative;
     left: auto;
-    width: 10%;
-    height: 10%;
+    width: 5%;
     font-size: 3rem;
     cursor: pointer;
 }
@@ -24,8 +23,7 @@
 .left-arrow {
     position: relative;
     left: auto;
-    width: 10%;
-    height: 10%;
+    width: 5%;
     font-size: 3rem;
     cursor: pointer;
 }
