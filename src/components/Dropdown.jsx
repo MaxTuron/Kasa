@@ -8,13 +8,13 @@ export default function Dropdown({ title, children }) {
 
   const { logementId } = useParams();
 
-  const handleToggle = e => {
+  const activeDropdown = e => {
     return setActive(!active);
   };
 
   return (
     <div className={"dropdownItem" + (logementId === undefined ? "Long" : "Short")}>
-      <div className="dropdownTitle" onClick={handleToggle}>
+      <div className="dropdownTitle" onClick={activeDropdown}>
         <h3>{title}</h3>
         <div>
           <FaChevronDown />

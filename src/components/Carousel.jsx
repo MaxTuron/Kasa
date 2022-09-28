@@ -8,6 +8,7 @@ import "../styles/carousel.css"
 export default function Carousel () {
     const { logementId } = useParams();
     const logementUnique = Logements.find((logementUnique) => logementUnique.id === logementId);
+
     const {pictures} = logementUnique;
 
     const [current, setCurrent] = useState(0);
