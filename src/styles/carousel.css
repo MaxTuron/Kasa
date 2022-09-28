@@ -36,6 +36,10 @@
     position: relative;
 }
 
+.noDisplay {
+    display: none;
+}
+
   @media (min-width: 300px) and (max-width : 400px) { 
 
     .right-arrow {

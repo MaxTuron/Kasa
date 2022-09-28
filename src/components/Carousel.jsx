@@ -27,7 +27,7 @@ export default function Carousel () {
 
 return(
     <section className="slider">
-        <img src={arrowLeft} alt="ArrowLeft" className="left-arrow" onClick={prevSlide}/>
+        <img src={arrowLeft} alt="ArrowLeft" className={length === 1 ? "noDisplay" : "left-arrow"} onClick={prevSlide}/>
         {pictures.map((picture,key) => {
                     return(
                         <div className={key === current ? 'slide activeImage' : 'slide'} key={key}>
@@ -36,7 +36,7 @@ return(
                         </div>
                     )
                 })}
-        <img src={arrowRight} alt="ArrowRight" className="right-arrow"  onClick={nextSlide}/>
+        <img src={arrowRight} alt="ArrowRight" className={length === 1 ? "noDisplay" : "right-arrow"} onClick={nextSlide}/>
     </section>
 )
 };
