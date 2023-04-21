@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import logoRed from "../assets/logoRed.png"
 import '../styles/banner.css';
-
 export default function Banner() {
   const URL = window.location.href
   const newUrl = URL.split(3000)
